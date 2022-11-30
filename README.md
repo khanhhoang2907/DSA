@@ -6,7 +6,7 @@
 
  cách chạy:
 
- cd source_code && g++ main.cpp functions.cpp -o main
+ cd source_code  &&  g++ main.cpp functions.cpp -o main
 
   nếu máy nào có bash chỉ cần dùng lệnh sau:
 
