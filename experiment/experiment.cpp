@@ -1197,7 +1197,7 @@ int main()
     FILE* f = NULL;
     f = fopen("result.txt", "w");
 
-    int dataOrder = 4, dataSize = 3;
+    int dataOrder = 4, dataSize = 6;
 
     for (int order = 1; order <= dataOrder; order++)
     {
