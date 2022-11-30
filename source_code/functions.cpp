@@ -337,7 +337,7 @@ void Count_MergeSort (int arr[], int left, int right, long long &comp)
 //------------------------------------------------------------
 
 // Tính thời gian
-int Patrition (int arr[], int first, int last)
+int Partition (int arr[], int first, int last)
 {
 	int pivot = first;
 	int lasts1 = first;
@@ -361,14 +361,14 @@ void QuickSort (int arr[], int first, int last)
 {
 	if (first < last)
 	{
-		int pivotIndex = Patrition(arr, first, last);
+		int pivotIndex = Partition(arr, first, last);
 		QuickSort(arr, first, pivotIndex - 1);
 		QuickSort(arr, pivotIndex + 1, last);
 	}
 }
 
 // Đếm số phép so sánh
-int Count_Patrition (int arr[], int first, int last, long long &comp)
+int Count_Partition (int arr[], int first, int last, long long &comp)
 {
 	int pivot = first;
 	int lasts1 = first;
@@ -392,7 +392,7 @@ void Count_QuickSort (int arr[], int first, int last, long long &comp)
 {
 	if (++comp && first < last)
 	{
-		int pivotIndex = Count_Patrition(arr, first, last, comp);
+		int pivotIndex = Count_Partition(arr, first, last, comp);
 		Count_QuickSort(arr, first, pivotIndex - 1, comp);
 		Count_QuickSort(arr, pivotIndex + 1, last, comp);
 	}
