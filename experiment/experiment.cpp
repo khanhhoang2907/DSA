@@ -1192,6 +1192,224 @@ void GenerateData(int a[], int n, int dataType, FILE* f)
 }
 
 
+// int main()
+// {
+//     FILE* f = NULL;
+//     f = fopen("result.txt", "w");
+
+//     int dataOrder = 4, dataSize = 6;
+
+//     for (int order = 1; order <= dataOrder; order++)
+//     {
+//         for (int size = 1; size <= dataSize; size++)
+//         {
+//             int n, * array;
+//              switch (size)
+//              {
+//              case 1:
+//                  n = 10000;
+//                  break;
+
+//              case 2:
+//                  n = 30000;
+//                  break;
+
+//              case 3:
+//                  n = 50000;
+//                  break;
+
+//              case 4:
+//                  n = 100000;
+//                  break;
+
+//              case 5:
+//                  n = 300000;
+//                  break;
+
+//              case 6:
+//                  n = 500000;
+//                  break;
+//              }
+
+//             array = new int[n];
+//             GenerateData(array, n, order, f);
+//             fprintf(f, "N = %d\n", n);
+//             clock_t start, end;
+
+//             for (int algorithm = 1;algorithm <=11;algorithm++)
+//             {
+//                 int* sort_Time = CreateNewArray(array, n);
+//                 int* sort_Comp = CreateNewArray(array, n);
+//                 double runTime = 0;
+//                 long long comp = 0;
+
+//                 switch (algorithm)
+//                 {
+//                 case 1: // Selection Sort
+//                     cout << "selection sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     SelectionSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_SelectionSort(sort_Comp, n, comp);
+//                     fprintf(f, "Selection sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"3";
+
+//                 case 2: // Insertion Sort
+//                     cout << "insertion sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     InsertionSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_InsertionSort(sort_Comp, n, comp);
+//                     fprintf(f, "Insertion sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"4";
+
+//                 case 3: // Bubble Sort
+//                     cout << "bubble sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     BubbleSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_BubbleSort(sort_Comp, n, comp);
+//                     fprintf(f, "Bubble sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"5";
+
+//                 case 4: // Shaker Sort
+//                     cout << "shaker sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     ShakerSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_ShakerSort(sort_Comp, n, comp);
+//                     fprintf(f, "Shaker sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"6";
+
+//                 case 5: // Shell Sort
+//                     cout << "shell sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     ShellSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_ShellSort(sort_Comp, n, comp);
+//                     fprintf(f, "Shell sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"7";
+
+//                 case 6: // Heap Sort
+//                     cout << "heap sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     HeapSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_HeapSort(sort_Comp, n, comp);
+//                     fprintf(f, "Heap sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<6;
+
+//                 case 7: // Merge Sort
+//                     cout << "merge sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     MergeSort(sort_Time, 0, n - 1, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_MergeSort(sort_Time, 0, n - 1, comp);
+//                     fprintf(f, "Merge sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"5";
+
+//                 case 8: // Quick Sort
+//                     cout << "quick sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     QuickSort(sort_Time, 0, n - 1, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_QuickSort(sort_Comp, 0, n - 1, comp);
+//                     fprintf(f, "Quick sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<4;
+
+//                 case 9: // Counting Sort
+//                     cout << "counting sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     CountingSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_CountingSort(sort_Comp, n, comp);
+//                     fprintf(f, "Counting sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"3";
+
+//                 case 10: // Radix Sort
+//                     cout << "radix sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     RadixSort(sort_Time, n, runTime);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     Count_RadixSort(sort_Comp, n, comp);
+//                     fprintf(f, "Radix sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"2";
+
+//                 case 11: // Flash Sort
+//                     cout << "flash sort\n";
+//                     cout << "Data order: " << order << endl;
+//                     cout << "Data size: " << n << endl;
+//                     cout << "--------------\n";
+//                     start = clock();
+//                     FlashSort(sort_Time, n, runTime);
+//                     Count_FlashSort(sort_Comp, n, comp);
+//                     end = clock();
+//                     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+//                     fprintf(f, "Flash sort: %lf \t %llu\n", runTime, comp);
+//                     break;
+//                     cout<<"1";
+//                 }
+//             }
+
+//             fprintf(f, "\n-------------------------------------------\n\n");
+//         }
+//     }
+
+//     fclose(f);
+//     return 0;
+// }
+
+
 int main()
 {
     FILE* f = NULL;
@@ -1243,113 +1461,121 @@ int main()
                 double runTime = 0;
                 long long comp = 0;
 
-                switch (algorithm)
-                {
-                case 1: // Selection Sort
-                    cout << "selection sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    SelectionSort(sort_Time, n, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_SelectionSort(sort_Comp, n, comp);
-                    fprintf(f, "Selection sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // switch (algorithm)
+                // {
+                // case 1: // Selection Sort
+                //     cout << "selection sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     SelectionSort(sort_Time, n, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_SelectionSort(sort_Comp, n, comp);
+                //     fprintf(f, "Selection sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"3";
 
-                case 2: // Insertion Sort
-                    cout << "insertion sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    InsertionSort(sort_Time, n, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_InsertionSort(sort_Comp, n, comp);
-                    fprintf(f, "Insertion sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 2: // Insertion Sort
+                //     cout << "insertion sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     InsertionSort(sort_Time, n, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_InsertionSort(sort_Comp, n, comp);
+                //     fprintf(f, "Insertion sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"4";
 
-                case 3: // Bubble Sort
-                    cout << "bubble sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    BubbleSort(sort_Time, n, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_BubbleSort(sort_Comp, n, comp);
-                    fprintf(f, "Bubble sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 3: // Bubble Sort
+                //     cout << "bubble sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     BubbleSort(sort_Time, n, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_BubbleSort(sort_Comp, n, comp);
+                //     fprintf(f, "Bubble sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"5";
 
-                case 4: // Shaker Sort
-                    cout << "shaker sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    ShakerSort(sort_Time, n, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_ShakerSort(sort_Comp, n, comp);
-                    fprintf(f, "Shaker sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 4: // Shaker Sort
+                //     cout << "shaker sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     ShakerSort(sort_Time, n, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_ShakerSort(sort_Comp, n, comp);
+                //     fprintf(f, "Shaker sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"6";
 
-                case 5: // Shell Sort
-                    cout << "shell sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    ShellSort(sort_Time, n, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_ShellSort(sort_Comp, n, comp);
-                    fprintf(f, "Shell sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 5: // Shell Sort
+                //     cout << "shell sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     ShellSort(sort_Time, n, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_ShellSort(sort_Comp, n, comp);
+                //     fprintf(f, "Shell sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"7";
 
-                case 6: // Heap Sort
-                    cout << "heap sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    HeapSort(sort_Time, n, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_HeapSort(sort_Comp, n, comp);
-                    fprintf(f, "Heap sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 6: // Heap Sort
+                //     cout << "heap sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     HeapSort(sort_Time, n, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_HeapSort(sort_Comp, n, comp);
+                //     fprintf(f, "Heap sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<6;
 
-                case 7: // Merge Sort
-                    cout << "merge sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    MergeSort(sort_Time, 0, n - 1, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_MergeSort(sort_Time, 0, n - 1, comp);
-                    fprintf(f, "Merge sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 7: // Merge Sort
+                //     cout << "merge sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     MergeSort(sort_Time, 0, n - 1, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_MergeSort(sort_Time, 0, n - 1, comp);
+                //     fprintf(f, "Merge sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"5";
 
-                case 8: // Quick Sort
-                    cout << "quick sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    QuickSort(sort_Time, 0, n - 1, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_QuickSort(sort_Comp, 0, n - 1, comp);
-                    fprintf(f, "Quick sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 8: // Quick Sort
+                //     cout << "quick sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     QuickSort(sort_Time, 0, n - 1, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_QuickSort(sort_Comp, 0, n - 1, comp);
+                //     fprintf(f, "Quick sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<4;
 
-                case 9: // Counting Sort
+              //  case 9: // Counting Sort
                     cout << "counting sort\n";
                     cout << "Data order: " << order << endl;
                     cout << "Data size: " << n << endl;
@@ -1361,33 +1587,36 @@ int main()
                     Count_CountingSort(sort_Comp, n, comp);
                     fprintf(f, "Counting sort: %lf \t %llu\n", runTime, comp);
                     break;
+                    cout<<"3";
 
-                case 10: // Radix Sort
-                    cout << "radix sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    RadixSort(sort_Time, n, runTime);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    Count_RadixSort(sort_Comp, n, comp);
-                    fprintf(f, "Radix sort: %lf \t %llu\n", runTime, comp);
-                    break;
+                // case 10: // Radix Sort
+                //     cout << "radix sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     RadixSort(sort_Time, n, runTime);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     Count_RadixSort(sort_Comp, n, comp);
+                //     fprintf(f, "Radix sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"2";
 
-                case 11: // Flash Sort
-                    cout << "flash sort\n";
-                    cout << "Data order: " << order << endl;
-                    cout << "Data size: " << n << endl;
-                    cout << "--------------\n";
-                    start = clock();
-                    FlashSort(sort_Time, n, runTime);
-                    Count_FlashSort(sort_Comp, n, comp);
-                    end = clock();
-                    runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
-                    fprintf(f, "Flash sort: %lf \t %llu\n", runTime, comp);
-                    break;
-                }
+                // case 11: // Flash Sort
+                //     cout << "flash sort\n";
+                //     cout << "Data order: " << order << endl;
+                //     cout << "Data size: " << n << endl;
+                //     cout << "--------------\n";
+                //     start = clock();
+                //     FlashSort(sort_Time, n, runTime);
+                //     Count_FlashSort(sort_Comp, n, comp);
+                //     end = clock();
+                //     runTime = (end - start) / (CLOCKS_PER_SEC / 1000);
+                //     fprintf(f, "Flash sort: %lf \t %llu\n", runTime, comp);
+                //     break;
+                //     cout<<"1";
+                // }
             }
 
             fprintf(f, "\n-------------------------------------------\n\n");
