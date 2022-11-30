@@ -1,0 +1,96 @@
+Mang phat sinh ngau nhien.
+N = 10000
+Selection sort: 107.000000 	 100009999
+Insertion sort: 57.000000 	 24748445
+Bubble sort: 184.000000 	 100009999
+Shaker sort: 150.000000 	 74360841
+Shell sort: 1.000000 	 652821
+Heap sort: 1.000000 	 629651
+Merge sort: 8.000000 	 475242
+Quick sort: 5.000000 	 308143
+Counting sort: 0.000000 	 69998
+Radix sort: 2.000000 	 360098
+Flash sort: 0.000000 	 88055
+
+-------------------------------------------
+
+Mang phat sinh ngau nhien.
+N = 30000
+Selection sort: 933.000000 	 900029999
+Insertion sort: 480.000000 	 224565914
+Bubble sort: 2163.000000 	 900029999
+Shaker sort: 1610.000000 	 672638681
+Shell sort: 5.000000 	 2270588
+Heap sort: 4.000000 	 2126745
+Merge sort: 26.000000 	 1559914
+Quick sort: 16.000000 	 1012677
+Counting sort: 0.000000 	 209997
+Radix sort: 4.000000 	 780074
+Flash sort: 1.000000 	 253752
+
+-------------------------------------------
+
+Mang phat sinh ngau nhien.
+N = 50000
+Selection sort: 2545.000000 	 2500049999
+Insertion sort: 1364.000000 	 630695773
+Bubble sort: 6316.000000 	 2500049999
+Shaker sort: 4715.000000 	 1887957661
+Shell sort: 10.000000 	 4536672
+Heap sort: 8.000000 	 3731405
+Merge sort: 44.000000 	 2722826
+Quick sort: 27.000000 	 1755685
+Counting sort: 0.000000 	 349993
+Radix sort: 13.000000 	 2350127
+Flash sort: 3.000000 	 448071
+
+-------------------------------------------
+
+Mang phat sinh ngau nhien.
+N = 100000
+Selection sort: 10162.000000 	 10000099999
+Insertion sort: 5349.000000 	 2497706967
+Bubble sort: 26456.000000 	 10000099999
+Shaker sort: 19323.000000 	 7500549981
+Shell sort: 22.000000 	 9740059
+Heap sort: 16.000000 	 7963373
+Merge sort: 87.000000 	 5745658
+Quick sort: 54.000000 	 3964379
+Counting sort: 1.000000 	 699991
+Radix sort: 31.000000 	 4700122
+Flash sort: 6.000000 	 859288
+
+-------------------------------------------
+
+Mang phat sinh ngau nhien.
+N = 300000
+Selection sort: 91631.000000 	 90000299999
+Insertion sort: 49476.000000 	 22465252901
+Bubble sort: 252742.000000 	 90000299999
+Shaker sort: 178358.000000 	 67460832709
+Shell sort: 79.000000 	 35851528
+Heap sort: 56.000000 	 26249415
+Merge sort: 261.000000 	 18645946
+Quick sort: 163.000000 	 12864889
+Counting sort: 5.000000 	 2099994
+Radix sort: 206.000000 	 17700153
+Flash sort: 24.000000 	 2491702
+
+-------------------------------------------
+
+Mang phat sinh ngau nhien.
+N = 500000
+Selection sort: 256184.000000 	 250000499999
+Insertion sort: 136806.000000 	 62589580465
+Bubble sort: 690710.000000 	 250000499999
+Shaker sort: 498675.000000 	 187898613995
+Shell sort: 141.000000 	 64337418
+Heap sort: 103.000000 	 45569866
+Merge sort: 477.000000 	 32017850
+Quick sort: 282.000000 	 22832273
+Counting sort: 14.000000 	 3499998
+Radix sort: 181.000000 	 13000074
+Flash sort: 53.000000 	 4261053
+
+-------------------------------------------
+

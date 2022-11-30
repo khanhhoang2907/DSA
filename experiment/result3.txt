@@ -1,0 +1,95 @@
+Mang	phat	sinh	co	thu	tu	nguoc.
+N	=	10000				
+Selection	sort:	107	100009999			
+Insertion	sort:	173	50014999			
+Bubble	sort:	304	100009999			
+Shaker	sort:	582	100010001			
+Shell	sort:	2	475175			
+Heap	sort:	2	605101			
+Merge	sort:	11	475242			
+Quick	sort:	4	472177			
+Counting	sort:	1	70003			
+Radix	sort:	1	20002			
+Flash	sort:	1	96752			
+						
+-------------------------------------------						
+						
+Mang	phat	sinh	co	thu	tu	nguoc.
+N	=	30000				
+Selection	sort:	854	900029999			
+Insertion	sort:	1564	450044999			
+Bubble	sort:	2554	900029999			
+Shaker	sort:	3471	900030001			
+Shell	sort:	4	1554051			
+Heap	sort:	5	2055684			
+Merge	sort:	22	1559914			
+Quick	sort:	6	1651617			
+Counting	sort:	0	210003			
+Radix	sort:	0	60002			
+Flash	sort:	3	290252			
+						
+-------------------------------------------						
+						
+Mang	phat	sinh	co	thu	tu	nguoc.
+N	=	50000				
+Selection	sort:	2445	2500049999			
+Insertion	sort:	3756	1250074999			
+Bubble	sort:	8674	2500049999			
+Shaker	sort:	9087	2500050001			
+Shell	sort:	3	2844628			
+Heap	sort:	9	3606094			
+Merge	sort:	35	2722826			
+Quick	sort:	10	2937095			
+Counting	sort:	0	350003			
+Radix	sort:	0	100002			
+Flash	sort:	4	483752			
+						
+-------------------------------------------						
+						
+Mang	phat	sinh	co	thu	tu	nguoc.
+N	=	100000				
+Selection	sort:	9043	10000099999			
+Insertion	sort:	9776	5000149999			
+Bubble	sort:	20685	10000099999			
+Shaker	sort:	21243	10000100001			
+Shell	sort:	5	6089190			
+Heap	sort:	11	7700831			
+Merge	sort:	35	5745658			
+Quick	sort:	15	6373251			
+Counting	sort:	1	700003			
+Radix	sort:	0	200002			
+Flash	sort:	9	967502			
+						
+-------------------------------------------						
+						
+Mang	phat	sinh	co	thu	tu	nguoc.
+N	=	300000				
+Selection	sort:	56348	90000299999			
+Insertion	sort:	85393	45000449999			
+Bubble	sort:	179179	90000299999			
+Shaker	sort:	194668	90000300001			
+Shell	sort:	21	20001852			
+Heap	sort:	39	25507887			
+Merge	sort:	122	18645946			
+Quick	sort:	45	21507853			
+Counting	sort:	6	2100003			
+Radix	sort:	1	600002			
+Flash	sort:	14	2902502			
+						
+-------------------------------------------						
+						
+Mang	phat	sinh	co	thu	tu	nguoc.
+N	=	500000				
+Selection	sort:	136556	2.5E+11			
+Insertion	sort:	231784	1.25001E+11			
+Bubble	sort:	606911	2.5E+11			
+Shaker	sort:	713578	2.50001E+11			
+Shell	sort:	26	33857581			
+Heap	sort:	78	44375014			
+Merge	sort:	186	32017850			
+Quick	sort:	72	37664187			
+Counting	sort:	10	3500003			
+Radix	sort:	1	1000002			
+Flash	sort:	23	4837502			
+						
+-------------------------------------------						
