@@ -1393,7 +1393,7 @@ void AlgorithmMode_2 (char* argv[]){
         CreateNewArray(arr, n_size, new_arr);
 		time = RunningTimeFunction(argv[2], arr, n_size);
 		comp = ComparisonsFunction(argv[2], new_arr, n_size);
-            writeFile("file//file//output.txt", arr, n_size);
+            writeFile("file//output.txt", arr, n_size);
 		if (time != -1 && comp != 1) {
 			cout << "Running time: " << time << endl;
 			cout << "Comparisions: " << comp << endl;

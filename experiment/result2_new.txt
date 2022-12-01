@@ -1,12 +1,12 @@
 Mang phat sinh co tinh thu tu.
 N = 10000
-Selection sort: 84.000000 	 100009999
+Selection sort: 82.000000 	 100009999
 Insertion sort: 0.000000 	 19999
-Bubble sort: 97.000000 	 100009999
+Bubble sort: 93.000000 	 100009999
 Shaker sort: 0.000000 	 20001
 Shell sort: 0.000000 	 360042
 Heap sort: 1.000000 	 655995
-Merge sort: 7.000000 	 475242
+Merge sort: 9.000000 	 475242
 Quick sort: 4.000000 	 262687
 Counting sort: 0.000000 	 60005
 Radix sort: 1.000000 	 360098
@@ -16,9 +16,9 @@ Flash sort: 0.000000 	 112494
 
 Mang phat sinh co tinh thu tu.
 N = 30000
-Selection sort: 719.000000 	 900029999
+Selection sort: 735.000000 	 900029999
 Insertion sort: 0.000000 	 59999
-Bubble sort: 849.000000 	 900029999
+Bubble sort: 876.000000 	 900029999
 Shaker sort: 0.000000 	 60001
 Shell sort: 1.000000 	 1170050
 Heap sort: 3.000000 	 2197820
@@ -32,65 +32,65 @@ Flash sort: 1.000000 	 337494
 
 Mang phat sinh co tinh thu tu.
 N = 50000
-Selection sort: 1965.000000 	 2500049999
+Selection sort: 2024.000000 	 2500049999
 Insertion sort: 0.000000 	 99999
-Bubble sort: 2299.000000 	 2500049999
+Bubble sort: 2280.000000 	 2500049999
 Shaker sort: 0.000000 	 100001
 Shell sort: 1.000000 	 2100049
 Heap sort: 5.000000 	 3859221
-Merge sort: 40.000000 	 2722826
-Quick sort: 23.000000 	 1565565
+Merge sort: 41.000000 	 2722826
+Quick sort: 25.000000 	 1565565
 Counting sort: 0.000000 	 300005
-Radix sort: 8.000000 	 2350127
+Radix sort: 11.000000 	 2350127
 Flash sort: 2.000000 	 562494
 
 -------------------------------------------
 
 Mang phat sinh co tinh thu tu.
 N = 100000
-Selection sort: 7879.000000 	 10000099999
+Selection sort: 7841.000000 	 10000099999
 Insertion sort: 0.000000 	 199999
-Bubble sort: 9122.000000 	 10000099999
+Bubble sort: 9117.000000 	 10000099999
 Shaker sort: 0.000000 	 200001
-Shell sort: 4.000000 	 4500051
-Heap sort: 13.000000 	 8226256
-Merge sort: 80.000000 	 5745658
-Quick sort: 49.000000 	 3331103
+Shell sort: 3.000000 	 4500051
+Heap sort: 11.000000 	 8226256
+Merge sort: 78.000000 	 5745658
+Quick sort: 47.000000 	 3331103
 Counting sort: 1.000000 	 600005
-Radix sort: 22.000000 	 4700122
+Radix sort: 20.000000 	 4700122
 Flash sort: 5.000000 	 1124994
 
 -------------------------------------------
 
 Mang phat sinh co tinh thu tu.
 N = 300000
-Selection sort: 71654.000000 	 90000299999
+Selection sort: 70388.000000 	 90000299999
 Insertion sort: 0.000000 	 599999
-Bubble sort: 82637.000000 	 90000299999
+Bubble sort: 81833.000000 	 90000299999
 Shaker sort: 0.000000 	 600001
-Shell sort: 14.000000 	 15300061
+Shell sort: 13.000000 	 15300061
 Heap sort: 37.000000 	 27022366
-Merge sort: 231.000000 	 18645946
-Quick sort: 122.000000 	 10765033
-Counting sort: 3.000000 	 1800005
-Radix sort: 95.000000 	 17700153
+Merge sort: 229.000000 	 18645946
+Quick sort: 124.000000 	 10765033
+Counting sort: 4.000000 	 1800005
+Radix sort: 101.000000 	 17700153
 Flash sort: 14.000000 	 3374994
 
 -------------------------------------------
 
 Mang phat sinh co tinh thu tu.
 N = 500000
-Selection sort: 197128.000000 	 250000499999
+Selection sort: 198208.000000 	 250000499999
 Insertion sort: 1.000000 	 999999
-Bubble sort: 235706.000000 	 250000499999
+Bubble sort: 227332.000000 	 250000499999
 Shaker sort: 1.000000 	 1000001
-Shell sort: 23.000000 	 25500058
-Heap sort: 61.000000 	 46789066
-Merge sort: 381.000000 	 32017850
-Quick sort: 193.000000 	 18524323
-Counting sort: 7.000000 	 3000005
-Radix sort: 179.000000 	 29500151
-Flash sort: 25.000000 	 5624994
+Shell sort: 22.000000 	 25500058
+Heap sort: 62.000000 	 46789066
+Merge sort: 379.000000 	 32017850
+Quick sort: 192.000000 	 18524323
+Counting sort: 6.000000 	 3000005
+Radix sort: 175.000000 	 29500151
+Flash sort: 23.000000 	 5624994
 
 -------------------------------------------
 
