@@ -1,3 +1,0 @@
-# DSA
-
- bash run.sh
